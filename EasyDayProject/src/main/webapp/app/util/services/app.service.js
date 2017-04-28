@@ -19,8 +19,11 @@ var AppService = (function () {
     function AppService(_http, _title) {
         this._http = _http;
         this._title = _title;
-        this.username = 'Cido91';
     }
+    //Set username
+    AppService.prototype.setUsername = function (username) {
+        this.username = username;
+    };
     /**
      * Converting retrieved routes from init or getUser to array of routes
      * @author Mario Petrovic

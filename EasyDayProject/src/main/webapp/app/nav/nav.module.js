@@ -10,7 +10,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var common_1 = require('@angular/common');
 var ng2_translate_1 = require('ng2-translate');
+var primeng_1 = require('primeng/primeng');
 var ng2_bootstrap_1 = require('ng2-bootstrap');
 var app_service_1 = require('../util/services/app.service');
 var nav_cmp_1 = require('./nav.cmp');
@@ -21,6 +23,8 @@ var NavModule = (function () {
         core_1.NgModule({
             imports: [
                 router_1.RouterModule,
+                primeng_1.GrowlModule,
+                common_1.CommonModule,
                 ng2_bootstrap_1.DropdownModule.forRoot(),
                 ng2_translate_1.TranslateModule.forRoot({
                     provide: ng2_translate_1.TranslateLoader

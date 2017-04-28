@@ -22,8 +22,11 @@ export class AppService {
     constructor(
         private _http: Http,
         private _title: Title
-    ) {
-        this.username = 'Cido91';
+    ) {}
+
+    //Set username
+    public setUsername(username: string): void{
+        this.username = username;
     }
 
     /**
